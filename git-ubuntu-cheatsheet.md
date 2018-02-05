@@ -292,12 +292,14 @@ Command | Description
 --- | ---
 git status | Lists all new or modified files to be committed
 git status -u | Like *git status*, but also lists all untracked files even files inside directories)
+git status --ignored | List all files and folders that are currently ignored (based on .gitignore file)
 git add . | add all new and modified files to next commit
 git add . -n | do dry run for add all new and modified files to next commit
 git add [file-name] [file-name] | adds specified files to next commit
 git commit -m "descriptive message" | records file snapshots permanently n version history
 git commit -m "descriptive message" --amend | add current changes to previous commit
 git commit --amend --no-edit | add current changes to previous commit using message from previous commit
+git log @{u}.. | display a list of pending commits (commits that have not been pushed)
 
 ### Undo Changes
 
