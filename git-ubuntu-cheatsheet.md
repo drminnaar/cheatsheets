@@ -359,6 +359,13 @@ git merge [branch-name] | combines the specified branch’s history into the cur
 git push origin --delete [branch-name] | deletes remote branch called [branch-name]
 git fetch && git checkout [branch-name] | checkout remote branch
 
+### Manage Commits
+
+Command | Description
+--- | ---
+git log @{u}.. | display a list of pending commits (commits that have not been pushed)
+git cherry-pick abc123 | add specific commit (abc123) to current branch
+
 ### Manage Tags
 
 Command | Description
